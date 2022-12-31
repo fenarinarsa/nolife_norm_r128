@@ -1,0 +1,13 @@
+﻿<Window x:Class="PasteMix.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasteMix"
+        mc:Ignorable="d"
+        Title="PasteMix" Height="363.043" Width="595.652">
+    <Grid>
+        <TextBox x:Name="txbOutput" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10,10,10,38" TextWrapping="Wrap" Text="Droppez les fichiers vidéo ici" DragEnter="txbOutput_DragEnter" Drop="txbOutput_Drop" PreviewDragOver="txbOutput_PreviewDragOver" IsReadOnly="True" />
+        <ProgressBar x:Name="pgbProgress" Height="23" Margin="10,0,10,10" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
